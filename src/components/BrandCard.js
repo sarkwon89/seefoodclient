@@ -7,8 +7,7 @@ function BrandCard(props) {
         <div className="col s12 m4">
           <div className="card">
             <div className="card-image">
-              {props.image}
-              {/* <img src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582143170/Image_from_iOS_ctvefm.jpg" /> */}
+              <img src={props.image} />
             </div>
            
             <div className="card-content">
