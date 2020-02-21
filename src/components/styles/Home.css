@@ -21,11 +21,11 @@ html {
 }
 
 .title {
-    margin: 0%;
     padding-top: 15%;
     font-size: 12rem;
     color: #492634;
     font-weight: 900;
+    margin-left: 15%;
 }
 
 h1 {
@@ -37,6 +37,7 @@ h1 {
     bottom: 0;
     padding-bottom: 100px;
     position: absolute;
+    margin-left: 10%;
 }
 
 
@@ -53,18 +54,14 @@ p {
 @media only screen and (max-width: 1500px) {
     .title {
         font-size: 9rem;
-        margin: 0%;
         padding-top: 100px;
-        padding-right: 5%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .title {
         font-size: 7rem;
-        margin: 0%;
         padding-top: 100px;
-        padding-right: 5%;
     }
 }
 
@@ -73,9 +70,7 @@ p {
 @media only screen and (max-width: 768px) {
     .title {
         font-size: 5rem;
-        margin: 0%;
         padding-top: 100px;
-        padding-right: 5%;
     }
 
     .btn-large {
@@ -87,12 +82,12 @@ p {
         width: 100%;
         background-position: 32%, 0%;
     }
+
 }
 
 @media only screen and (max-width: 500px) {
     .title {
-        font-size: 3rem;
-        margin: 0%;
+        font-size: 3.75rem;
         padding-top: 150px;
     }
 
@@ -105,12 +100,12 @@ p {
         width: 100%;
         background-position: 32%, 0%;
     }
+
 }
 
 @media only screen and (max-width: 350px) {
     .title {
-        font-size: 2.5rem;
-        margin: 0%;
+        font-size: 3rem;
         padding-top: 150px;
     }
 
@@ -123,4 +118,5 @@ p {
         width: 100%;
         background-position: 32%, 0%;
     }
+
 }

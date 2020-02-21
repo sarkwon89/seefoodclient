@@ -4,8 +4,8 @@ import "../styles/Home.css";
 function Home() {
     return (
         <div className="home row">
-            <div className="col s6"></div>
-            <div className="col s6">
+            <div className="col s4"></div>
+            <div className="col s7">
                 <h1 className="left-align title">SEEFOOD</h1>
                 <div className="btnbox">
                 <p className="left-align">Start your experience by clicking on the AR or QR button</p>
