@@ -16,7 +16,9 @@ class Navbar extends Component {
                     <li> <Link to="/recipe" className={window.location.pathname === "recipe" ? "nav-link active" : "nav-link1"}>
                         Hamburger
                         </Link></li>
-                    <li><a href="#!">two</a></li>
+                    <li> <Link to="/recipe2" className={window.location.pathname === "recipe2" ? "nav-link active" : "nav-link1"}>
+                        Cauliflower Fried Rice
+                        </Link></li>
                     <li><a href="#!">three</a></li>
                 </ul>
                 <ul id="dropdown2" className="dropdown-content">
@@ -68,11 +70,12 @@ class Navbar extends Component {
                     </li>
                 </ul>
                 <ul id="dropdown3" className="dropdown-content">
-                    <li> <Link to="/recipe" className={window.location.pathname === "recipe" ? "nav-link active" : "nav-link1"}>
-                        Hamburger
+                    <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
+                        Manage
                         </Link></li>
-                    <li><a href="#!">two</a></li>
-                    <li><a href="#!">three</a></li>
+                    <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
+                        Brand
+                        </Link></li>
                 </ul>
                 <ul id="dropdown4" className="dropdown-content">
                     <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
