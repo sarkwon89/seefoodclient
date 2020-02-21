@@ -8,9 +8,14 @@
     width: 100%;
 }
 
-/* .qr{
-    width: 80px;
-} */
+.qr{
+margin: 2%;
+width: 200px;
+}
+
+.recbox{
+    display:flex;
+}
 
 
 .row{
@@ -30,7 +35,7 @@
 
 .recipetitle{
     font-size: 7rem;
-    margin-top: 10%;
+    margin: 5%;
 }
 
 p{
@@ -50,6 +55,9 @@ p{
         font-size: 5rem;
     }
 
+    .qr{
+        width: 100px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
