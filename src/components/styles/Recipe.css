@@ -9,12 +9,15 @@
 }
 
 .qr{
-margin: 2%;
-width: 200px;
+margin: 0%;
+}
+
+.start{
+    margin:0%;
 }
 
 .recbox{
-    display:flex;
+    margin:5% !important;
 }
 
 
