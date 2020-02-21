@@ -6,6 +6,9 @@ import About from '../src/components/pages/About'
 import Manage from './components/pages/ManageIng'
 import BrandRec from './components/pages/BrandRec'
 import Recipe from './components/pages/Recipe'
+import Recipe2 from './components/pages/Recipe2'
+
+
 
 
 import './App.css'
@@ -19,6 +22,7 @@ function App() {
           <Route exact path="/manage" component={Manage} />
           <Route path="/brandrec" component={BrandRec} />
           <Route exact path="/recipe" component={Recipe} />
+          <Route exact path="/recipe2" component={Recipe2} />
       </Router>
   );
 }
