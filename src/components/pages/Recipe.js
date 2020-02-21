@@ -7,8 +7,12 @@ function Recipe() {
             <div className="row">
                 <div className="col s12 m6">
                     <h1 className="center-align recipetitle">Gordon Ramsay's Hamburger</h1>
-                    <p className="center-align">Start your journey by opening our app</p>
-                    <img className="responsive-img z-depth-2 qr" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582239458/app_dxeqat.png"/>
+                    <div className="row">
+                        <div className="col s12 recbox">
+                            <p className="center-align">Start your journey by opening our app</p>
+                            <img className="responsive-img z-depth-2 qr" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582249295/app2_u5qvqc.png" />
+                        </div>
+                    </div>
                 </div>
                 <div className="col s12 m6">
                     <img className="responsive-img z-depth-3" src="https://cdn.stocksnap.io/img-thumbs/960w/WYL5KWIPUD.jpg" />
