@@ -9,7 +9,7 @@ function Recipe2() {
                     <h1 className="center-align recipetitle">SK's Cauliflower Fried</h1>
                     <div className="row recbox">
                         <div className="col s8">
-                            <p className="start">Scan the QR code with your device camera to start your journey {'\u2728'}</p>
+                            <p className="start">Scan the QR code with your mobile device camera to start your journey {'\u2728'}</p>
                         </div>
                         <div className="col s3">
                         <img className="responsive-img z-depth-2 qr" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582249295/app2_u5qvqc.png" />
