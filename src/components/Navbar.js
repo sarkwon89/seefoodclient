@@ -28,6 +28,22 @@ class Navbar extends Component {
                         Brand
                         </Link></li>
                 </ul>
+                <ul id="dropdown3" className="dropdown-content">
+                    <li> <Link to="/recipe" className={window.location.pathname === "recipe" ? "nav-link active" : "nav-link1"}>
+                        Hamburger
+                        </Link></li>
+                    <li> <Link to="/recipe2" className={window.location.pathname === "recipe2" ? "nav-link active" : "nav-link1"}>
+                        Cauliflower Fried Rice
+                        </Link></li>
+                </ul>
+                <ul id="dropdown4" className="dropdown-content">
+                    <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
+                        Manage
+                        </Link></li>
+                    <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
+                        Brand
+                        </Link></li>
+                </ul>
                 <div className="nav-wrapper teal darken-4">
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
@@ -42,10 +58,10 @@ class Navbar extends Component {
                         </Link>
                         </li>
                         <li>
-                            <a className="dropdown-trigger" href="#!" data-target="dropdown1">Recipes<i className="material-icons right">arrow_drop_down</i></a>
+                            <a className="dropdown-trigger" href="#!" data-target="dropdown3">Recipes<i className="material-icons right">arrow_drop_down</i></a>
                         </li>
                         <li>
-                            <a className="dropdown-trigger" href="#!" data-target="dropdown2">Internal<i className="material-icons right">arrow_drop_down</i></a>
+                            <a className="dropdown-trigger" href="#!" data-target="dropdown4">Internal<i className="material-icons right">arrow_drop_down</i></a>
                         </li>
                     </ul>
                 </div>
