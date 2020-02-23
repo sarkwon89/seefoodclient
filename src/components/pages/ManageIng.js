@@ -99,7 +99,6 @@ class ManageIng extends Component {
         this.setState({
             newRec: {
                 ...this.state.newRec,
-
                 [name]: value
             }
         });
@@ -119,7 +118,7 @@ class ManageIng extends Component {
             }
         });
         // setImage('')
-
+        API.getRecommendations()
     }
 
     handleImageUpload = imageUrl=>{

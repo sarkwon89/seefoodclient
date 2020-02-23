@@ -34,9 +34,9 @@ function About() {
                             <img className="activator" src="https://avatars2.githubusercontent.com/u/57707960?s=460&v=4" />
                         </div>
                         <div className="card-content">
-                        <span className="card-title activator grey-text text-darken-4">Robert Cavalero<i
+                        <span className="card-title activator grey-text text-darken-4">Click to learn about:<i
                                 className="material-icons right">more_vert</i>
-                                <p>Click to learn more</p></span>
+                                <p>Robert Cavalero</p></span>
                         </div>
                         <div className="card-reveal">
                         <span className="card-title grey-text text-darken-4">Robert Cavalero<i
@@ -52,9 +52,9 @@ function About() {
                             <img className="activator" src="https://avatars3.githubusercontent.com/u/57238930?s=460&v=4" />
                         </div>
                         <div className="card-content">
-                        <span className="card-title activator grey-text text-darken-4">Rafay Khawar<i
+                        <span className="card-title activator grey-text text-darken-4">Click to learn about:<i
                                 className="material-icons right">more_vert</i>
-                                <p>Click to learn more</p></span>
+                                <p>Rafay Khawar</p></span>
                         </div>
                         <div className="card-reveal">
                             <span className="card-title grey-text text-darken-4">Rafay Khawar<i
@@ -71,9 +71,9 @@ function About() {
                                 src="https://avatars2.githubusercontent.com/u/54822096?s=400&u=b4cbf6c0f17a7a04af1f7af87703eab1c587063d&v=4" />
                         </div>
                         <div className="card-content">
-                            <span className="card-title activator grey-text text-darken-4">Sarah Kwon<i
+                            <span className="card-title activator grey-text text-darken-4">Click to learn about:<i
                                 className="material-icons right">more_vert</i>
-                                <p>Click to learn more</p></span>
+                                <p>Sarah Kwon</p></span>
                         </div>
                         <div className="card-reveal">
                             <span className="card-title grey-text text-darken-4">Sarah Kwon<i
