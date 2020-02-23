@@ -20,6 +20,10 @@ margin: 0%;
     margin:5% !important;
 }
 
+.steps{
+    font-size: 40px;
+}
+
 
 .row{
     margin: 0%;
@@ -61,6 +65,10 @@ p{
     .qr{
         width: 100px;
     }
+    
+.steps{
+    font-size: 20px;
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -74,5 +82,9 @@ p{
     .recipetitle{
         font-size: 4rem;
     }
+    
+.steps{
+    font-size: 20px;
+}
 
 }

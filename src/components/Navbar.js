@@ -19,7 +19,6 @@ class Navbar extends Component {
                     <li> <Link to="/recipe2" className={window.location.pathname === "recipe2" ? "nav-link active" : "nav-link1"}>
                         Cauliflower Fried Rice
                         </Link></li>
-                    <li><a href="#!">three</a></li>
                 </ul>
                 <ul id="dropdown2" className="dropdown-content">
                     <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
@@ -63,27 +62,11 @@ class Navbar extends Component {
                     </li>
                     <li className="divider"></li>
                     <li>
-                        <a className="dropdown-trigger" href="#!" data-target="dropdown3">Recipes<i className="material-icons right">arrow_drop_down</i></a>
+                        <a className="dropdown-trigger" href="#!" data-target="dropdown1">Recipes<i className="material-icons right">arrow_drop_down</i></a>
                     </li>
                     <li>
-                        <a className="dropdown-trigger" href="#!" data-target="dropdown4">Internal<i className="material-icons right">arrow_drop_down</i></a>
+                        <a className="dropdown-trigger" href="#!" data-target="dropdown2">Internal<i className="material-icons right">arrow_drop_down</i></a>
                     </li>
-                </ul>
-                <ul id="dropdown3" className="dropdown-content">
-                    <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
-                        Manage
-                        </Link></li>
-                    <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
-                        Brand
-                        </Link></li>
-                </ul>
-                <ul id="dropdown4" className="dropdown-content">
-                    <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
-                        Manage
-                        </Link></li>
-                    <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
-                        Brand
-                        </Link></li>
                 </ul>
             </nav>
         )
