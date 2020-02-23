@@ -34,14 +34,15 @@ function About() {
                             <img className="activator" src="https://avatars2.githubusercontent.com/u/57707960?s=460&v=4" />
                         </div>
                         <div className="card-content">
-                            <span className="card-title activator grey-text text-darken-4">Robert Cavalero<i
-                                className="material-icons right">more_vert</i></span>
-                            <p className="aboutp"><a href="#">This is a link</a></p>
+                        <span className="card-title activator grey-text text-darken-4">Robert Cavalero<i
+                                className="material-icons right">more_vert</i>
+                                <p>Click to learn more</p></span>
                         </div>
                         <div className="card-reveal">
-                            <span className="card-title grey-text text-darken-4">Card Title<i
+                        <span className="card-title grey-text text-darken-4">Robert Cavalero<i
                                 className="material-icons right">close</i></span>
-                            <p className="aboutp">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <p className="aboutp">Back-End Developer aka database master.</p>
+                            <p className="aboutp"><a href="#">LinkedIn</a></p>
                         </div>
                     </div>
                 </div>
@@ -51,14 +52,15 @@ function About() {
                             <img className="activator" src="https://avatars3.githubusercontent.com/u/57238930?s=460&v=4" />
                         </div>
                         <div className="card-content">
-                            <span className="card-title activator grey-text text-darken-4">Rafay Khawar<i
-                                className="material-icons right">more_vert</i></span>
-                            <p className="aboutp"><a href="#">This is a link</a></p>
+                        <span className="card-title activator grey-text text-darken-4">Rafay Khawar<i
+                                className="material-icons right">more_vert</i>
+                                <p>Click to learn more</p></span>
                         </div>
                         <div className="card-reveal">
-                            <span className="card-title grey-text text-darken-4">Card Title<i
+                            <span className="card-title grey-text text-darken-4">Rafay Khawar<i
                                 className="material-icons right">close</i></span>
-                            <p className="aboutp">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <p className="aboutp">AR guru and Front-End Developer.</p>
+                            <p className="aboutp"><a href="#">LinkedIn</a></p>
                         </div>
                     </div>
                 </div>
@@ -70,20 +72,20 @@ function About() {
                         </div>
                         <div className="card-content">
                             <span className="card-title activator grey-text text-darken-4">Sarah Kwon<i
-                                className="material-icons right">more_vert</i></span>
-                            <p className="aboutp"><a href="#">This is a link</a></p>
+                                className="material-icons right">more_vert</i>
+                                <p>Click to learn more</p></span>
                         </div>
                         <div className="card-reveal">
-                            <span className="card-title grey-text text-darken-4">Card Title<i
+                            <span className="card-title grey-text text-darken-4">Sarah Kwon<i
                                 className="material-icons right">close</i></span>
-                            <p className="aboutp">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <p className="aboutp">Project Manager and Front-End Developer.</p>
+                            <p className="aboutp"><a href="https://www.linkedin.com/in/sarah-kwon-268b2671">LinkedIn</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     )
-
 }
 
 
