@@ -4,15 +4,14 @@ import Add from '../AddCard';
 import AddRec from '../AddRec'
 import M from "materialize-css";
 import Delete from '../DeleteCard'
+// import Upload from '../Upload'
 
 
 class ManageIng extends Component {
 
     state = {
-        ingredient: {
-            name: ""
-        },
-
+        newIng: {
+            name: ""},
         ingredients: [],
         newRec: {
             brand: "",
@@ -20,7 +19,11 @@ class ManageIng extends Component {
             image: "",
             price: "",
             IngredientId: ""
-        }
+        },
+        recommendations: [],
+        delIngName: "",
+        delIngId: 0,
+        delRecId: 0
     }
 
 
@@ -33,6 +36,7 @@ class ManageIng extends Component {
                 ingredients: res.data 
             }))
             .then(M.AutoInit())
+    
             .catch(err => console.log(err));
     }
 
@@ -46,31 +50,36 @@ class ManageIng extends Component {
 
         // Getting the value and name of the input which triggered the change
         const value = event.target.value;
-        const name = event.target.name;
+        // const name = event.target.name;
 
         // Updating the input's state
         this.setState({
-            ingredient: {
-                [name]: value
-            }
+            newIng: {
+                name: value}
+            
         });
     }
 
     handleSubmitIngredient = event => {
-
         event.preventDefault();
-
-        console.log(this.state.ingredient);
-        API.addIngredient(this.state.ingredient)
+        API.addIngredient(this.state.newIng)
             .then(() => {
-                this.getIngs();
+                    this.getIngs();
             })
             .catch(err => console.log(err));
+
+            this.setState({ 
+              newIng: {
+                  name: ""}
+            })
+     
     };
 
 
     // The following functions are for "AddRec.js"
     handleIngredientSelection = event => {
+        console.log(event.target);
+        
 
         this.setState({
             newRec: {
@@ -81,11 +90,11 @@ class ManageIng extends Component {
     };
 
     handleAddRecommendation = event => {
-
         // Getting the value and name of the input which triggered the change
+        console.log(event.target);
+        
         const value = event.target.value;
         const name = event.target.name;
-
         // Updating the input's state
         this.setState({
             newRec: {
@@ -109,6 +118,8 @@ class ManageIng extends Component {
                 IngredientId: 0
             }
         });
+        // setImage('')
+
     }
 
     handleImageUpload = imageUrl=>{
@@ -120,12 +131,38 @@ class ManageIng extends Component {
         })
     }
     // The following functions are for "DeleteCard.js"
-    handleDeleteRecommendation = event => {
 
+    handleDeleteIngredientSelection = event => {
+        this.setState({
+            delIngId: parseInt(event.target.value),
+            delIngName: event.target.name
+        },this.getRecommendations);
+    };
+
+    getRecommendations = event => {
+        API.getIngredientRecs(this.state.delIngId)
+            .then(res => this.setState({ 
+                recommendations: res.data 
+            }))
+            .catch(err => console.log(err));
     }
 
     handleDeleteIngredient = event => {
+        API.deleteIngredient(this.state.delIngId)
+        .then(res => this.setState(
+            {delIngId: 0},this.getIngs))
+        .catch(err => console.log(err))
+        // I am using reload here to revert back to the default value of the indredient selector after deleting an ingredient.
+        // This accomplishes what I want but there might be a better way.
+        window.location.reload();
+    }
 
+    handleDeleteRecommendation = event => {
+        console.log(event.target);
+        console.log(event.target.value);
+        API.deleteRecommendation(parseInt(event.target.value))
+        .then(res => this.getRecommendations())
+        .catch(err => console.log(err));
     }
 
     render() {
@@ -135,7 +172,7 @@ class ManageIng extends Component {
                 <br />
 
                 <Add
-                    name={this.state.name}
+                    newIng={this.state.newIng}
                     handleAddIngredient={this.handleAddIngredient}
                     handleSubmitIngredient={this.handleSubmitIngredient}
                 />
@@ -146,13 +183,21 @@ class ManageIng extends Component {
                     handleIngredientSelection={this.handleIngredientSelection}
                     handleAddRecommendation={this.handleAddRecommendation}
                     handleSubmitRecommendation={this.handleSubmitRecommendation}
-                    update={this.update}
+                    // update={this.update}
                     handleImageUpload={this.handleImageUpload}
                 />
 
                 <Delete
-                    handleDeleteIngredient={this.state.handleDeleteIngredient}
-                    handleDeleteRecommendation={this.state.handleDeleteRecommendation}
+                    ingredients={this.state.ingredients}
+                    delIngName={this.state.delIngName}
+                    delIngId={this.state.delIngId}
+                    delRecId={this.state.delRecId}
+                    recommendations={this.state.recommendations}
+                    handleDeleteIngredientSelection={this.handleDeleteIngredientSelection}
+                    handleDeleteIngredient={this.handleDeleteIngredient}
+                    handleDeleteRecommendation={this.handleDeleteRecommendation}
+                    getRecommendations={this.getRecommendations}
+                    deleteRec={this.deleteRec}
                 />
             </div>
         );

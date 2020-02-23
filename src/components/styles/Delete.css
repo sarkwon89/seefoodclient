@@ -1,3 +1,7 @@
+.input-field {
+    display: flex;
+}
+
 .list-group-item {
     display: flex;
     justify-content: space-between;
