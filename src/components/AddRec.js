@@ -68,7 +68,7 @@ function AddRec(props) {
 
                 {/* Submit Rec */}
                 <div className="input-field col s12" >
-                    <button className="btn btn-primary" onClick={props.handleSubmitRecommendation} >
+                    <button className="btn btn-primary red accent-2" onClick={props.handleSubmitRecommendation} >
                         Add Recommendation
                     </button>
                 </div>

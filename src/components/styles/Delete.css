@@ -1,3 +1,7 @@
+.input-field {
+    display: flex;
+}
+
 .list-group-item {
     display: flex;
     justify-content: space-between;
@@ -7,6 +11,14 @@
     align-items: center;
 }
 
+.list-group{
+    width: 100%;
+}
+
 h3{
     margin:0%;
+}
+
+.deletebox{
+    padding-bottom: 10%;
 }
