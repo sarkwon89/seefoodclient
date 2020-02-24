@@ -7,7 +7,7 @@ function BrandCard(props) {
         <div className="col s12 m4">
           <div className="card">
             <div className="card-image">
-              <img src={props.image} />
+              <img src={props.image} alt=""/>
             </div>
            
             <div className="card-content">
