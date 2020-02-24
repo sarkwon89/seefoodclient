@@ -1,6 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
-import API from "../utils/API";
-import M from "materialize-css";
+import React from 'react';
 import Upload from './Upload'
 
 
