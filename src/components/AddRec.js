@@ -1,10 +1,11 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import API from "../utils/API";
 import M from "materialize-css";
 import Upload from './Upload'
 
 
 function AddRec(props) {
+    
     
     return (
         <div className="container">
@@ -39,7 +40,8 @@ function AddRec(props) {
                 
 
                 {/* Image for Rec */}
-                <Upload handleImageUpload={props.handleImageUpload}/>  
+                <Upload handleImageUpload={props.handleImageUpload}
+                        image = {props.newRec.image}/>
 
 
                 {/* Price for Rec */}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import API from "../utils/API"
 import './styles/Delete.css';
 
@@ -9,8 +9,8 @@ function DeleteCard(props) {
 
             <h2>Delete Ingredients & Brand Recommendations</h2>
             <div className="row inputbox">
-                <div className="input-field col s12">
-                    <select className="browser-default" defaultValue={""} onChange={props.handleDeleteIngredientSelection}>
+                <div className="input-field col s12" >
+                    <select className="browser-default" id="delIngSel" defaultValue={""} onChange={props.handleDeleteIngredientSelection}>
                         <option value="" disabled>Select an Ingredient</option>
                         {props.ingredients.map(ing => (
                             <option value={ing.id} key={ing.id} name="delIngName" >{ing.name} </option>
