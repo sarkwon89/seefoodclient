@@ -3,12 +3,11 @@ import React, { useState } from 'react'
 
 function Upload(props) {
 
-    const [image, setImage] = useState('')
     const [loading, setLoading] = useState(false)
 
     const uploadImage = async e => {
         const files = e.target.files
-        // console.log(e.target.files)
+        console.log(e.target.files)
         const data = new FormData()
         data.append('file', files[0])
         data.append('upload_preset', 'seefoodar')
@@ -23,8 +22,8 @@ function Upload(props) {
         const file = await res.json()
         console.log(file.secure_url)
         props.handleImageUpload(file.secure_url)
-        setImage(file.secure_url)
         setLoading(false)
+        
     }
 
     return (
@@ -33,13 +32,14 @@ function Upload(props) {
                 type="file"
                 name="files"
                 placeholder="Upload an image"
+                id="imgFile"
                 onChange={uploadImage}
             />
             {/* <label htmlFor="Img1">Image</label> */}
             {loading ? (
                 <h3>Loading...</h3>
             ) : (
-                    <img src={image} style={{ width: '300px' }} alt="image" />
+                    <img src={props.image} style={{ width: '300px' }} alt="image" />
                 )}
         </div>
     )

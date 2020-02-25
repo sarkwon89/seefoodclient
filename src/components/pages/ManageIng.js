@@ -1,10 +1,9 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, {Component } from 'react';
 import API from "../../utils/API"
 import Add from '../AddCard';
 import AddRec from '../AddRec'
 import M from "materialize-css";
 import Delete from '../DeleteCard'
-// import Upload from '../Upload'
 
 
 class ManageIng extends Component {
@@ -18,12 +17,10 @@ class ManageIng extends Component {
             url: "",
             image: "",
             price: "",
-            IngredientId: ""
+            IngredientId: 0
         },
         recommendations: [],
-        delIngName: "",
         delIngId: 0,
-        delRecId: 0
     }
 
 
@@ -72,7 +69,6 @@ class ManageIng extends Component {
               newIng: {
                   name: ""}
             })
-     
     };
 
 
@@ -107,18 +103,17 @@ class ManageIng extends Component {
     handleSubmitRecommendation = event => {
         event.preventDefault();
         API.addRecommendation(this.state.newRec);
-        
+        this.resetImageFile();
         this.setState({
             newRec: {
                 brand: "",
                 url: "",
                 image: "",
                 price: "",
-                IngredientId: 0
+                IngredientId: 0,
+                files: ""
             }
         });
-        // setImage('')
-        API.getRecommendations()
     }
 
     handleImageUpload = imageUrl=>{
@@ -128,6 +123,11 @@ class ManageIng extends Component {
                 image:imageUrl
             }
         })
+    }
+
+    resetImageFile = event => {
+        let fileName = document.getElementById('imgFile');
+        fileName.value = "";
     }
     // The following functions are for "DeleteCard.js"
 
@@ -151,9 +151,12 @@ class ManageIng extends Component {
         .then(res => this.setState(
             {delIngId: 0},this.getIngs))
         .catch(err => console.log(err))
-        // I am using reload here to revert back to the default value of the indredient selector after deleting an ingredient.
-        // This accomplishes what I want but there might be a better way.
-        window.location.reload();
+        this.resetDeleteSelection();
+    }
+
+    resetDeleteSelection = event => {
+        let delIngSelect = document.getElementById('delIngSel');
+        delIngSelect.value = "";
     }
 
     handleDeleteRecommendation = event => {
@@ -182,15 +185,12 @@ class ManageIng extends Component {
                     handleIngredientSelection={this.handleIngredientSelection}
                     handleAddRecommendation={this.handleAddRecommendation}
                     handleSubmitRecommendation={this.handleSubmitRecommendation}
-                    // update={this.update}
                     handleImageUpload={this.handleImageUpload}
                 />
 
                 <Delete
                     ingredients={this.state.ingredients}
-                    delIngName={this.state.delIngName}
                     delIngId={this.state.delIngId}
-                    delRecId={this.state.delRecId}
                     recommendations={this.state.recommendations}
                     handleDeleteIngredientSelection={this.handleDeleteIngredientSelection}
                     handleDeleteIngredient={this.handleDeleteIngredient}
