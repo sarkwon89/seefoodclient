@@ -22,7 +22,10 @@ function About() {
                         <li>Open your device camera and scan the QR code on a recipe page to open the SEEFOOD application.</li>
                         <li>Click the AR button to intialize your augmented reality experience when viewing the ingredient section or click the QR button to initialize your video experience when viewing the recipe section.</li>
                     </ol>
-                    {/* <video>TBF</video> */}
+                    <h5 className="howto">HOW TO USE VIDEO TUTORIAL</h5>
+                    <div className="video1">
+                    <video autoPlay src="https://res.cloudinary.com/diad1aa5z/video/upload/v1582667333/howtovideo_girxoc.mp4"  />
+                    </div>
                 </div>
             </div>
             <div className="row">
