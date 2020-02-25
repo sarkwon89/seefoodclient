@@ -1,3 +1,20 @@
 .aboutp{
     font-size: 15px;
 }
+
+.video1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+
+@media only screen and (min-width: 500px) {
+
+    .howto{
+        font-size: 4rem;
+    }
+
+
+}
