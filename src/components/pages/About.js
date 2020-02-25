@@ -8,11 +8,11 @@ function About() {
             <div className="row">
                 <div className="col s12">
                     <h1>WHAT IS SEEFOOD?</h1>
-                    <p>SEEFOOD is an interactive recipe book which uses a web application that will scan AR and QR codes to initialize a delightful and immersive experience for the customer. Customers will be able to see their ingredients in a 3D form using AR to help them understand what the product looks like in its full form to help them with their purchase decision.
+                    <p>SEEFOOD is an interactive recipe book which uses a web application that will scan AR and QR codes to initialize a delightful and immersive experience for the customer. Customers will be able to see their ingredients in 3D form using AR to understand how the product looks in order to help them find and purchase. 
                     </p>
                     <hr />
                     <h2>Customer Quotes</h2>
-                    <p> “There are times when I see unfamiliar ingredients in a recipe book. I end up avoiding the dish because it is hard to know what I am looking for at the store. If there was a way to visualize these ingredients, I would feel better about attempting to cook with them.” </p>
+                    <p> “There are times when I see unfamiliar ingredients in a recipe book. I end up avoiding the dish because it is hard to know what I am looking for at the store. If there was a way to visualize these ingredients, I would feel better about attempting to cook with them.”  </p>
                 </div>
             </div>
             <div className="row">
