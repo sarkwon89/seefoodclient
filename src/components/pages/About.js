@@ -79,7 +79,7 @@ function About() {
                             <span className="card-title grey-text text-darken-4">Sarah Kwon<i
                                 className="material-icons right">close</i></span>
                             <p className="aboutp">Project Manager and Front-End Developer.</p>
-                            <p className="aboutp"><a href="https://www.linkedin.com/in/sarah-kwon-268b2671">LinkedIn</a></p>
+                            <p className="aboutp"><a href="https://www.linkedin.com/in/sarah-kwon-268b2671" target="_blank">LinkedIn</a></p>
                         </div>
                     </div>
                 </div>
