@@ -25,55 +25,47 @@ function Recipe2() {
                     <h2 className="center-align">INGREDIENTS</h2>
                     <p className="center-align">AR Mode Available</p>
                     <div className="test">
-                        <p>Onion</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-e_jiresq.png" />
+                        <p>Cauliflower</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582651465/pattern-cauliflower_lzcn25.png" />
                     </div>
                     <div className="test">
-                        <p>Hamburger Bun</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-i_ugctbg.png" />
+                        <p>Frozen Veggies</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498347/pattern-frozenVeggies_war99m.png" />
                     </div>
                     <div className="test">
-                        <p>Tomato</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-h_defxix.png" />
+                        <p>Soy Sauce</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498347/pattern-soySauce_jcljb5.png" />
                     </div>
                     <div className="test">
-                        <p>Meat</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-j_ccluvk.png" />
+                        <p>Sesame Oil</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498348/pattern-sesameOil_kes2xj.png" />
                     </div>
                     <div className="test">
-                        <p>Mayonnaise</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-g_i3y1tz.png" />
+                        <p>Garlic</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582651505/pattern-garlic_wxeim2.png" />
                     </div>
                     <div className="test">
-                        <p>Lettuce</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-c_tzrsvp.png" />
+                        <p>Egg</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498347/pattern-eggs_wuqpgx.png" />
                     </div>
                     <div className="test">
-                        <p>Salt</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-b_mgjraw.png" />
+                        <p>Salt & Pepper</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498347/pattern-saltAndPepper_ekrb2j.png" />
                     </div>
                     <div className="test">
-                        <p>Cheese</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-d_bwe2sq.png" />
+                        <p>Chicken (Optional)</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498347/pattern-chicken_tldpgv.png" />
                     </div>
                     <div className="test">
-                        <p>Pepper</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-a_xmez8q.png" />
-                    </div>
-                    <div className="test">
-                        <p>Mustard</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582155509/pattern-marker-f_wdmlvy.png" />
+                        <p>Ginger</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582498347/pattern-ginger_hj4lum.png" />
                     </div>
                 </div>
                 <div className="col box s12 m6">
                     <h2 className="center-align">RECIPE</h2>
                     <div className="test">
-                        <p>Gordon Ramsay Video</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582157205/gordonramsayvid_bqveqd.png" />
-                    </div>
-                    <div className="test">
-                        <p>HIRO</p>
-                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582157981/hiro_qcsdr1.png" />
+                        <p>Cauliflower Fried Rice Video Tutorial</p>
+                        <img className="arbox responsive-img z-depth-2" src="https://res.cloudinary.com/diad1aa5z/image/upload/v1582651651/cauliflowerfriedricevid_o7lj1b.png" />
                     </div>
                 </div>
             </div>
