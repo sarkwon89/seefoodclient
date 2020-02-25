@@ -1,17 +1,30 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import API from "../utils/API"
 import M from "materialize-css";
 import './styles/Navbar.css'
 
 class Navbar extends Component {
 
+    state = {
+        isUserAuthenticated: this.props.loggedIn
+    }
+
     componentDidMount() {
-        M.AutoInit()
+        API.isAuthenticated().then(res => this.setState({
+            isUserAuthenticated: true
+        }))
+            .then(M.AutoInit())
+            .catch(err => {
+                console.log(err);
+            })
+
     }
 
     render() {
         return (
             <nav>
+                
                 <ul id="dropdown1" className="dropdown-content">
                     <li> <Link to="/recipe" className={window.location.pathname === "recipe" ? "nav-link active" : "nav-link1"}>
                         Hamburger
@@ -21,12 +34,18 @@ class Navbar extends Component {
                         </Link></li>
                 </ul>
                 <ul id="dropdown2" className="dropdown-content">
-                    <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
-                        Manage
-                        </Link></li>
-                    <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
-                        Brand
-                        </Link></li>
+                    {!this.props.loggedIn ?
+                        <li> <Link to="/login" className={window.location.pathname === "login" ? "nav-link active" : "nav-link1"}>
+                            Log In
+                        </Link></li> : null}
+                    {this.props.loggedIn ?
+                        <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
+                            Manage
+                        </Link></li> : null}
+                    {this.props.loggedIn ?
+                        <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
+                            Brand
+                        </Link></li> : null}
                 </ul>
                 <ul id="dropdown3" className="dropdown-content">
                     <li> <Link to="/recipe" className={window.location.pathname === "recipe" ? "nav-link active" : "nav-link1"}>
@@ -37,12 +56,18 @@ class Navbar extends Component {
                         </Link></li>
                 </ul>
                 <ul id="dropdown4" className="dropdown-content">
-                    <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
-                        Manage
-                        </Link></li>
-                    <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
-                        Brand
-                        </Link></li>
+                    {!this.props.loggedIn ?
+                        <li> <Link to="/login" className={window.location.pathname === "login" ? "nav-link active" : "nav-link1"}>
+                            Log In
+                        </Link></li> : null}
+                    {this.props.loggedIn ?
+                        <li> <Link to="/manage" className={window.location.pathname === "manage" ? "nav-link active" : "nav-link1"}>
+                            Manage
+                        </Link></li> : null}
+                    {this.props.loggedIn ?
+                        <li> <Link to="/brandrec" className={window.location.pathname === "brandrec" ? "nav-link active" : "nav-link1"}>
+                            Brand
+                        </Link></li> : null}
                 </ul>
                 <div className="nav-wrapper teal darken-4">
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>

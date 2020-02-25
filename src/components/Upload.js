@@ -39,7 +39,7 @@ function Upload(props) {
             {loading ? (
                 <h3>Loading...</h3>
             ) : (
-                    <img src={props.image} style={{ width: '300px' }} alt="image" />
+                    <img src={props.image} style={{ width: '300px' }} alt="" />
                 )}
         </div>
     )

@@ -38,7 +38,15 @@ class ManageIng extends Component {
     }
 
     componentDidMount() {
-        this.getIngs();
+        API.isAuthenticated().then(res =>{
+            this.getIngs();
+        })
+            .catch(err => {
+                console.log("in err")
+                this.props.history.push("/login")
+            })
+
+        // this.getIngs();
     }
 
 
@@ -151,6 +159,7 @@ class ManageIng extends Component {
         .then(res => this.setState(
             {delIngId: 0},this.getIngs))
         .catch(err => console.log(err))
+        this.getRecommendations();
         this.resetDeleteSelection();
     }
 
