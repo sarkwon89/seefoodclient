@@ -25,7 +25,7 @@ class BrandRec extends Component {
 
                     <div className="container recontainer">
                         <h1 className="center-align">Brand Recommendation</h1>
-                        <h2 className="center-align"> {this.state.recommendations[0].Ingredient.name || "loading"}</h2>
+                        <h3 className="center-align"> {this.state.recommendations[0].Ingredient.name || "loading"}</h3>
                         <div className="row recrow">
 
                             {this.state.recommendations.map((rec, index) => (

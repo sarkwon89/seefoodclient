@@ -6,7 +6,7 @@ function AddIng(props) {
     return (
         <div className="container">
             
-            <h2>New Ingredient</h2>
+            <h3>New Ingredient</h3>
             
             <div className="row inputbox z-depth-4">  
                 <div className="input-field col s12">
