@@ -6,7 +6,7 @@ function DeleteCard(props) {
 
         <div className="container deletebox">
 
-            <h3>Delete Ingredients & Brand Recommendations</h3>
+            <h3>Delete Ingredient</h3>
             <div className="row inputbox">
                 <div className="input-field col s12" >
                     <select className="browser-default" id="delIngSel" defaultValue={""} onChange={props.handleDeleteIngredientSelection}>
