@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BrandCard from "../BrandCard"
 import API from "../../utils/API"
+import '../styles/BrandRec.css'
 
 
 class BrandRec extends Component {
@@ -19,6 +20,7 @@ class BrandRec extends Component {
     render() {
         return (
             <div>
+                <a target="_blank" href="https://rafaykhawar09.github.io/arTest/" className="waves-effect waves-light btn btn-primary red accent-2 backbtn"><i className="material-icons right">center_focus_strong</i>Back to AR Mode</a>
                 {this.state.recommendations.length > 0 ? (
 
                     <div className="container recontainer">
@@ -38,7 +40,7 @@ class BrandRec extends Component {
                             ))}
                         </div>
                     </div>
-                ) : <p>Loading</p>}
+                ) : <p className="loading">Click a 3d model to see brand recommendations</p>}
             </div>
         )
     }
