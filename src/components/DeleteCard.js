@@ -6,7 +6,7 @@ function DeleteCard(props) {
 
         <div className="container deletebox">
 
-            <h3>Delete Ingredients & Brand Recommendations</h3>
+            <h4>Delete Ingredients & Recommendations</h4>
             <div className="row inputbox">
                 <div className="input-field col s12" >
                     <select className="browser-default" id="delIngSel" defaultValue={""} onChange={props.handleDeleteIngredientSelection}>
@@ -15,7 +15,7 @@ function DeleteCard(props) {
                             <option value={ing.id} key={ing.id} name="delIngName" >{ing.name} </option>
                         ))}
                     </select>
-                    <button className="btn btn-primary red accent-2" id="delIngBtn" onClick={props.handleDeleteIngredient} >Delete Ingredient / Recommendations</button>
+                    <button className="btn btn-primary red accent-2" id="delIngBtn" onClick={props.handleDeleteIngredient} >Delete Ingredient</button>
                     {/* <button className="btn btn-primary red accent-2" onClick={props.handleDeleteIngredient} ><i className="far fa-trash-alt fa-2x"></i></button> */}
                 </div>
             </div>
