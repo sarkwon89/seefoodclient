@@ -7,7 +7,7 @@ function AddRec(props) {
     
     return (
         <div className="container">
-            <h2>Add Brand Recommendation</h2>
+            <h3>Add Brand Recommendation</h3>
             
             <div className="row inputbox">
                 
