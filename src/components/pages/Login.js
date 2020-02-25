@@ -38,13 +38,14 @@ export default function Login(props) {
     }
     return (
         <div>
-            <button onClick={isAuthButton}>Check login status</button>
+            <div className="container">
             <form onSubmit={handleFormSubmit}>
                 {/* {willRedirect?<Redirect to='/'/>:null} */}
                 <input onChange={handleInputChange} value={login.name} type="text" name="name" placeholder="name" />
                 <input onChange={handleInputChange} value={login.password} type="password" name="password" placeholder="class" />
-                <input type="submit" value="Log me in" />
+                <input className="btn btn-primary red accent-2" type="submit" value="Login" />
             </form>
+            </div>
         </div>
     )
 }
