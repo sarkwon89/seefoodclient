@@ -16,7 +16,7 @@ function BrandCard(props) {
               <h5>Price: {props.price}  (est)</h5>
             </div>
             <div className="card-action">
-              <a href={props.url}>Shop on Amazon</a>
+              <a href={props.url} target="_blank">Shop on Amazon</a>
             </div>
           </div>
         </div>

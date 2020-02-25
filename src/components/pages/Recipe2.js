@@ -6,7 +6,7 @@ function Recipe2() {
         <div className="recipecontainer">
             <div className="row">
                 <div className="col s12 m6">
-                    <h1 className="center-align recipetitle">SK's Cauliflower Fried</h1>
+                    <h1 className="center-align recipetitle">SK's Cauliflower Fried Rice</h1>
                     <div className="row recbox">
                         <div className="col s8">
                             <p className="start">Scan the QR code with your mobile device camera to start your journey {'\u2728'}</p>
