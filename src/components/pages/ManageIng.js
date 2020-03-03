@@ -166,6 +166,7 @@ class ManageIng extends Component {
     resetDeleteSelection = event => {
         let delIngSelect = document.getElementById('delIngSel');
         delIngSelect.value = "";
+        this.getRecommendations();
     }
 
     handleDeleteRecommendation = event => {
